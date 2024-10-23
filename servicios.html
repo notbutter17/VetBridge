@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicios - Vet Connection</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="servicios-style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar Sticky -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <div class="container">
+        <!-- Logo con enlace a la página de inicio -->
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo" style="width: 45px;">
+        </a>
+        <!-- Botón para móvil -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Enlaces del Navbar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">TIENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informacion-veterinaria.php">INFORMACIÓN/VETERINARIOS</a>
+                </li>
+            </ul>
+
+            <!-- Iconos a la derecha -->
+            <ul class="navbar-nav">
+                <!-- Ícono de búsqueda -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="searchIcon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <!-- Ícono de carrito de compra -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cartIcon" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="cartIcon">
+                        <a class="dropdown-item" href="#">Ver carrito</a>
+                        <a class="dropdown-item" href="#">Finalizar compra</a>
+                        <p class="dropdown-item">Tu carrito está vacío.</p>
+                    </div>
+                </li>
+                <!-- Ícono de usuario -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userIcon" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="userIcon">
+                        <div class="dropdown-menu" aria-labelledby="userIcon">
+                            <a class="dropdown-item" href="login_usuario.html">Desear Ingresar Como Usuario</a>
+                            <a class="dropdown-item" href="login_empresa.html">Deseas Ingresar Como Empresa</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- jQuery y Bootstrap JS necesarios -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script personalizado -->
+<script src="script.js"></script>
+
+<div id="output" style="margin: 20px; font-size: 1.2em;"></div>
+
+<!-- Sección Nuestros Servicios -->
+<section id="especialistas">
+    <div class="content">
+        <h1>Nuestros Servicios:</h1>
+        <p>¡Pronto llegan las publicaciones!</p>
+    </div>
+</section>
+
+<!-- Sección de Servicios VET-CONNECTION 1-->
+<section class="service-section">
+    <h2>VET-CONNECTION</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 service-card">
+                <img src="cirugia.jpg" alt="Cirugía General">
+                <h4>CIRUGÍA GENERAL</h4>
+                <p>Descripción del servicio de cirugía general.</p>
+                <a href="#" class="btn">Obtener más información</a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 service-card">
+                <img src="petshop.png" alt="Pet Shop">
+                <h4>PET SHOP</h4>
+                <p>Descripción del servicio de Pet Shop.</p>
+                <a href="#" class="btn">Obtener más información</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 service-card">
+                <img src="esterilizacion.jpg" alt="Esterilización">
+                <h4>ESTERILIZACIÓN</h4>
+                <p>Descripción del servicio de esterilización.</p>
+                <a href="#" class="btn">Obtener más información</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Servicios VET-CONNECTION 2-->
+<section class="service-section bg-danger text-white">
+    <h2 class="text-white">VET-CONNECTION</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4 service-card">
+                <img src="traumato.png" alt="Traumatología">
+                <h4 class="text-white">TRAUMATOLOGÍA</h4>
+                <p class="text-white">Descripción del servicio de traumatología.</p>
+                <a href="#" class="btn btn-light text-dark">Obtener más información</a>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4 service-card">
+                <img src="guarderia.jpg " alt="Guardería">
+                <h4 class="text-white">GUARDERÍA</h4>
+                <p class="text-white">Descripción del servicio de guardería.</p>
+                <a href="#" class="btn btn-light text-dark">Obtener más información</a>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4 service-card">
+                <img src="anipparasitos.png" alt="Tratamiento Antiparasitario">
+                <h4 class="text-white">TRATAMIENTO ANTIPARASITARIO</h4>
+                <p class="text-white">Descripción del tratamiento antiparasitario.</p>
+                <a href="#" class="btn btn-light text-dark">Obtener más información</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2023 Vet-Connection - Todos los derechos reservados.</p>
+    <div>
+        <a href="#">POLÍTICA DE PRIVACIDAD</a>
+        <a href="#">TÉRMINOS Y CONDICIONES</a>
+    </div>
+</footer>
+
+<!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Obtener la URL actual
+    const currentLocation = window.location.pathname;
+
+    // Obtener todos los enlaces de navegación
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Comparar la URL actual con el href de cada enlace
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentLocation) {
+            link.classList.add('active'); // Añadir la clase 'active' si es el enlace correcto
+        } else {
+            link.classList.remove('active'); // Quitar la clase 'active' de los enlaces no actuales
+        }
+    });
+</script>
+
+
+</body>
+</html>

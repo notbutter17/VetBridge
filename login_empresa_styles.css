@@ -1,0 +1,60 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #444;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título del formulario */
+h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Estilos de los campos de texto */
+.form-control {
+    background-color: #555;
+    border: 1px solid #777;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #666;
+    color: #fff;
+    border-color: #d9534f;
+    box-shadow: none;
+}
+
+/* Estilos del botón de inicio de sesión */
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Links del formulario */
+a {
+    color: #d9534f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c9302c;
+}

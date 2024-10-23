@@ -1,0 +1,238 @@
+/* Navbar Sticky */
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; /* Tamaño del texto en el navbar */
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Subrayado más sutil para la sección activa */
+.navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espacio entre el texto y el subrayado */
+}
+
+.navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+/* Sección Nuestros Especialistas */
+#especialistas {
+    background-image: url('paracas-2023.desktop.jpg'); /* Ajusta la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0; /* Inicialmente invisible para animación */
+    transform: translateY(50px); /* Desplazamiento inicial */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animación: Cuando la clase "animar" es añadida, la sección se hace visible */
+#especialistas.animar {
+    opacity: 1;
+    transform: translateY(0); /* Regresa a su posición original */
+}
+
+#especialistas h1, #especialistas p {
+    color: white;
+    text-align: center;
+}
+
+#especialistas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#especialistas p {
+    font-size: 1.2rem;
+}
+
+/* Estilo solo para el párrafo con sombreado */
+#especialistas .highlight {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    display: inline-block; /* Para que el sombreado cubra solo el texto */
+    padding: 5px 15px; /* Espacio interno alrededor del texto */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+/* Estilo para Nuestro Equipo 1 (Fondo rojo, letras blancas) */
+.team-section-1 {
+    background-color: #d9534f; /* Fondo rojo */
+    color: white; /* Letras blancas */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-section-1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Textos y Botones en Nuestro Equipo 1 */
+.team-section-1 .team-member h4,
+.team-section-1 .team-member p {
+    color: white; /* Color blanco para todo el texto */
+}
+
+.team-section-1 .team-member .btn {
+    background-color: white; /* Fondo del botón en blanco */
+    color: #d9534f; /* Texto rojo */
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.team-section-1 .team-member .btn:hover {
+    background-color: #c9302c;
+    color: white;
+}
+
+
+/* Estilo para Nuestro Equipo 2 (Fondo blanco, letras negras) */
+.team-section-2 {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Letras negras */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-section-2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d9534f; /* Título en rojo */
+}
+
+/* Textos y Botones en Nuestro Equipo 2 */
+.team-section-2 .team-member h4,
+.team-section-2 .team-member p {
+    color: black; /* Color negro para todo el texto */
+}
+
+.team-section-2 .team-member .btn {
+    background-color: #d9534f; /* Fondo del botón en rojo */
+    color: white; /* Texto blanco */
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.team-section-2 .team-member .btn:hover {
+    background-color: #c9302c;
+    color: white;
+}
+
+
+/* Animación para los botones */
+.team-member .btn {
+    margin-top: 10px;
+    background-color: #d9534f; /* Fondo del botón en rojo */
+    color: white;
+    border-radius: 2    0px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover en los botones */
+.team-member .btn:hover {
+    background-color: #c9302c;
+    transform: scale(1.1); /* Botón crece ligeramente */
+}
+
+/* Animación de las imágenes */
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none; /* El borde ha sido eliminado */
+    transition: transform 0.4s ease;
+}
+
+
+.team-member img:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+}
+
+
+/* Alineación correcta de las imágenes y botones */
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d9534f;
+}
+
+/* Usando Flexbox para centrar los elementos del equipo */
+.team-section .container {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es pequeña */
+}
+
+.team-member {
+    flex: 0 1 30%; /* Asegura que cada miembro del equipo ocupe aproximadamente un tercio del ancho disponible */
+    margin-bottom: 30px; /* Espacio entre los elementos */
+    text-align: center;
+}
+
+/* Botones y otros elementos centrados */
+.team-member .btn {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: #d9534f;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+.team-section.bg-danger h2 {
+    color: white; /* Cambia el color a blanco */
+}
+.nav-link.active {
+    text-decoration: underline; /* Esto aplicará el subrayado */
+    font-weight: bold; /* Esto hará que el texto esté en negrita, opcional */
+}

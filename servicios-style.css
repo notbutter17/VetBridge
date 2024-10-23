@@ -1,0 +1,147 @@
+/* Navbar Sticky */
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; /* Tamaño del texto en el navbar */
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Subrayado más sutil para la sección activa */
+.navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espacio entre el texto y el subrayado */
+}
+
+.navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+/* Estilos para la sección de Servicios */
+#especialistas {
+    background-image: url('paracas-2023.desktop.jpg'); /* Ajusta la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#especialistas h1 {
+    font-size: 2.5rem;
+}
+
+#especialistas p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo sombreado para el texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Sección de servicios */
+.service-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-section h2 {
+    color: #d9534f;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.service-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-card img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #d9534f;
+}
+
+.service-card h4 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.service-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.service-card .btn {
+    margin-top: 20px;
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #c9302c;
+    transform: scale(1.1);
+}
+
+/* Estilo VET-CONNECTION 2 */
+.service-section.bg-danger.text-white h2,
+.service-section.bg-danger.text-white .service-card h4,
+.service-section.bg-danger.text-white .service-card p {
+    color: white;
+}
+
+.service-section.bg-danger.text-white .btn {
+    background-color: white;
+    color: black;
+}
+
+.service-section.bg-danger.text-white .btn:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

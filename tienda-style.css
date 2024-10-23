@@ -1,0 +1,39 @@
+/* Navbar Sticky */
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+    transition: all 0.3s ease;
+    font-size: 1.2rem; /* Tamaño del texto en el navbar */
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    width: 50px; /* Ajusta el tamaño del logo */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Subrayado más sutil para la sección activa */
+.navbar-nav .nav-item .nav-link.active {
+    border-bottom: 2px solid red;
+    font-weight: bold;
+    padding-bottom: 5px; /* Espacio entre el texto y el subrayado */
+}
+
+.navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+.nav-link.active {
+    text-decoration: underline; /* Esto aplicará el subrayado */
+    font-weight: bold; /* Esto hará que el texto esté en negrita, opcional */
+}
